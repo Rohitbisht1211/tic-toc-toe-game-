@@ -22,7 +22,7 @@ msgContainer.classList.add("hide");
 };
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        console.log("The box was clicked");
+     
         if (turnO) {
             box.innerText = "O";
             turnO = false;
@@ -60,7 +60,7 @@ const checkWinner = () => {
 
         if (pos1val != "" && pos2val != "" && pos3val != "") {
             if (pos1val === pos2val && pos2val === pos3val){
-                console.log("winner ", pos1val);
+               
                 showWinner(pos1val);
             }
         }
